@@ -1,0 +1,12 @@
+<header>
+  <nav class="navbar">
+    <a [routerLink]="'/'" class="navbar--logo">
+      <img src="assets/images/logo.png" alt="logo">
+    </a>
+    <ul class="navbar--links">
+      <li *ngFor="let item of navData">
+        <a routerLinkActive="active-router" [routerLink]="item.route" [routerLinkActiveOptions]="{exact: true}"> {{item.name}} </a>
+      </li>
+    </ul>
+  </nav>
+</header>
