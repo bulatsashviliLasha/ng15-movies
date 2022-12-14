@@ -5,8 +5,10 @@
   display: block;
   min-height: 325px;
   border-radius: 5px;
+  opacity: 0.75;
   background-color: $bgColorLight;
   border: 1px solid $lightGray;
+  transition: all ease-in-out 0.5s;
 
   &--image{
     img{
@@ -40,6 +42,11 @@
     font-weight: bold;
     margin: 0.5rem;
     height: 30px;
+  }
+
+  &:hover{
+    opacity: 1;
+    scale: 1.03;
   }
 
 }
